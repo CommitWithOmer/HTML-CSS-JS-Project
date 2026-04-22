@@ -27,10 +27,11 @@ body {
 }
 
 .logo{
+  margin-left: -30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .nav-links {
@@ -49,6 +50,7 @@ body {
 }
 
 .auth {
+  margin-right: -40px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -78,13 +80,16 @@ body {
 
 .hero-left {
   max-width: 500px;
+  margin-left: 100px;
 }
 
 .hero-left h1 {
   font-size: 70px;
   font-weight: 700;
   line-height: 1.1;
+  margin-top: 50px;
   margin-bottom: 40px;
+  
 }
 
 .hero-left p {
@@ -127,4 +132,86 @@ body {
 .hero-right img {
   width: 350px;
   max-width: 100%;
+}
+
+
+
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item{
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Dropdown base */
+.dropdown-menu {
+
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  min-width: max-content;
+
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.25s ease;
+  
+}
+
+
+
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Items */
+.dropdown-menu p {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+  color: #000;
+}
+
+.dropdown-menu p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dropdown-menu img{
+  width: 10px;
+}
+
+
+/* Arrow */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  transition: transform 0.25s ease;
+}
+
+/* Rotate when open */
+.dropdown.active .arrow {
+  transform: rotate(180deg);
 }

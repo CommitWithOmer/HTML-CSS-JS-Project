@@ -12,12 +12,46 @@
   <header class="navbar">
     <div class="logo"><img src="images/logo.svg" alt="Logo">
 
-       <nav class="nav-links">
-          <a href="#">Features</a>
-          <a href="#">Company</a>
-          <a href="#">Careers</a>
-          <a href="#">About</a>
-        </nav>
+       
+
+      <nav class="nav-links">
+  <div class="nav-item dropdown">
+    <a href="#" class="dropdown-toggle">Features 
+      <svg class="arrow" width="10" height="6" viewBox="0 0 10 6">
+          <path d="M1 1L5 5L9 1" stroke="black" stroke-width="1.5" fill="none"/>
+      </svg>
+    </a>
+    <div class="dropdown-menu">
+      <p><img src="images/icon-todo.svg" alt="">Todo List</p>
+      <p><img src="images/icon-calendar.svg" alt="">Calendar</p>
+      <p><img src="images/icon-reminders.svg" alt="">Reminders</p>
+      <p><img src="images/icon-planning.svg" alt="">Planning</p>
+    </div>
+  </div>
+
+  <div class="nav-item dropdown">
+    <a href="#" class="dropdown-toggle">Company 
+      <svg class="arrow" width="10" height="6" viewBox="0 0 10 6">
+          <path d="M1 1L5 5L9 1" stroke="black" stroke-width="1.5" fill="none"/>
+      </svg>
+    </a>
+    <div class="dropdown-menu">
+      <p>History</p>
+      <p>Our Team</p>
+      <p>Blog</p>
+    </div>
+  </div>
+
+  <div class="nav-item">
+    <a href="#">Careers</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="#">About</a>
+  </div>
+</nav>
+
+
     </div>
 
     <div class="auth">
@@ -51,6 +85,6 @@
       <img src="images/image-hero-desktop.png" alt="Hero"/>
     </div>
   </section>
-
+<script src="index.js"></script>
 </body>
 </html>
