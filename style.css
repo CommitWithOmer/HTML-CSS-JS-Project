@@ -431,6 +431,8 @@ body {
   align-items: center;
 }
 
+
+
 .mobile-auth {
   display: flex;
   flex-direction: column;
@@ -471,6 +473,8 @@ body {
 
 
 
+
+
 }
 
 .menu-toggle.open span:nth-child(1) {
@@ -488,3 +492,15 @@ body {
 .menu-toggle span {
   transition: all 0.3s ease;
 }
+
+
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown:hover .arrow {
+    transform: rotate(180deg);
+  }

@@ -1,10 +1,19 @@
-document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-  btn.onclick = e => {
-    e.preventDefault();
-    btn.parentElement.classList.toggle('active');
-  };
-});
+document.addEventListener('DOMContentLoaded', () => {
 
+  document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+
+    btn.addEventListener('click', e => {
+
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        btn.parentElement.classList.toggle('active');
+      }
+
+    });
+
+  });
+
+});
 
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-links');
