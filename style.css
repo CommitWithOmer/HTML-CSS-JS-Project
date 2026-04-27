@@ -25,14 +25,7 @@ body {
 }
 
 
-/* .navbar {
-  display: flex;
-  
-  align-items: center;
-  padding: 25px 60px;
-} */
 
-/* claud */
 
 .navbar {
   display: flex;
@@ -41,15 +34,7 @@ body {
   gap: 0;
 }
 
-/* .logo{
-  margin-left: -30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-} */
 
-/* claud */
 .logo {
   display: flex;
   align-items: center;
@@ -60,12 +45,11 @@ body {
 .nav-links {
   display: flex;
   gap: 40px;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .nav-links a {
   text-decoration: none;
-  /* color: #555; */
   color: #686868;
   font-size: 15px;
   font-weight: 500;
@@ -78,7 +62,7 @@ body {
 
 .auth {
   margin-left: auto;
-  /* margin-right: -40px; */
+  margin-right: -20px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -86,7 +70,6 @@ body {
 
 
 .login {
-  /* color: #555; */
   color: #686868;
   text-decoration: none;
 }
@@ -114,14 +97,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 60px;
-  gap: 30px;
-  margin-top: 10px;
-  margin-left: 30px;
+  gap: 20px;
+  margin-top: 15px;
+  margin-left: 55px;
 }
 
 .hero-left {
   max-width: 500px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .hero-left h1 {
@@ -138,6 +121,7 @@ body {
 .hero-left p {
   color: #666;
   font-size: 16px;
+  width: 400px;
   line-height: 1.6;
   margin-bottom: 40px;
   font-family: 'Epilogue', sans-serif;
@@ -177,6 +161,7 @@ body {
 
 .hero-right img {
   width: 400px;
+  margin-right: -20px;
   max-width: 100%;
 }
 
@@ -201,7 +186,7 @@ body {
 .dropdown-menu {
 
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 0px;
   min-width: max-content;
 
