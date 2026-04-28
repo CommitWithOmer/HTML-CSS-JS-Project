@@ -319,6 +319,7 @@ body {
     padding: 50px 20px;
     gap: 12px;
     transition: 0.3s ease;
+    z-index: 100;
   }
 
   .nav-links.active {
@@ -480,24 +481,12 @@ body {
 }
 
 
-/* .dropdown.active .arrow {
-    transform: rotate(180deg) !important;
-  }
-
-  .dropdown.active .arrow {
-    transform: rotate(180deg);
-  }
-
-  .arrow {
-  transition: transform 0.25s ease;
-} */
-
 .arrow {
   transition: transform 0.25s ease;
   transform: rotate(0deg);
 }
 
-/* Active/open state: arrow points DOWN */
+
 .dropdown.active .arrow {
   transform: rotate(180deg);
 }
@@ -549,3 +538,18 @@ body {
   }
 }
 
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.overlay.active {
+  display: block;
+}
