@@ -1,16 +1,18 @@
+
 document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-
     btn.addEventListener('click', e => {
-
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        btn.parentElement.classList.toggle('active');
-      }
-
+      e.preventDefault();
+      e.stopPropagation();
+      btn.closest('.dropdown').classList.toggle('active');
     });
+  });
 
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown').forEach(d => {
+      d.classList.remove('active');
+    });
   });
 
 });
@@ -28,5 +30,3 @@ closeBtn.addEventListener('click', () => {
   nav.classList.remove('active');
   menu.classList.remove('open');
 });
-
-
