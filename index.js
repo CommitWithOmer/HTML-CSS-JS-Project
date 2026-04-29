@@ -38,5 +38,5 @@ closeBtn.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   nav.classList.remove('active');
   menu.classList.remove('open');
-  overlay.classList.remove('active'); // 👈 add this
+  overlay.classList.remove('active');
 });

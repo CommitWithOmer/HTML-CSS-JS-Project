@@ -422,6 +422,7 @@ body {
     max-height: 320px;
     object-fit: cover;
     display: block;
+    margin-top: 10px;
   }
 
   .dropdown-menu p {
@@ -513,17 +514,7 @@ body {
   transition: all 0.3s ease;
 }
 
-/* step 1 */
 
-/* .dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .dropdown:hover .arrow {
-    transform: rotate(180deg);
-  } */
 
 
 @media (min-width: 769px) {
@@ -535,6 +526,10 @@ body {
 
   .dropdown:hover .arrow {
     transform: rotate(180deg);
+  }
+
+  .nav-links a{
+    color: #686868;
   }
 }
 
